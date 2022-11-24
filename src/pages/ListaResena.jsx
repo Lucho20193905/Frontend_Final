@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {  } from "react-router-dom";
 import React from "react";
-import "./styles/Listaresena.css";
+
 
 const ListaResena = () => {
   return <div>
