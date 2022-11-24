@@ -14,13 +14,13 @@ import Mk_2 from './pages/Mk_2';
 import Mk_4_5 from './pages/Mk_4_5';
 import Mk_12 from './pages/Mk_12';
 import RegistroPage from './pages/RegistroPage'
-import Principal from './pages/luis/rankingtotalcomponentes/Principal'
+import Principal from './pages/Principal'
 import ListaResena from './pages/ListaResena'
 import HistorialOrden from './pages/HistorialOrden'
 import Surprise from './pages/Surprise';
-import Main from './pages/Main'
+import Main from './pages/luis/rankingtotalcomponentes/Main'
 import Carrito from './pages/luis/carrito/Carrito'
-import Building from './pages/Building'
+import Building from './pages/luis/building/Building'
 import Mockup21 from './pages/Mockup21';
 import Prueba from './pages/Alonso/Prueba';
 
