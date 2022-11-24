@@ -22,6 +22,7 @@ import Main from './pages/Main'
 import Carrito from './pages/Carrito'
 import Building from './pages/Building'
 import Mockup21 from './pages/Mockup21';
+import Prueba from './pages/Prueba';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -45,6 +46,7 @@ root.render(
       <Route path='/Carrito' element={<Carrito />}/>
       <Route path='/Building' element={<Building />}/>
       <Route path='/Resena' element={<Mockup21 />}/>
+      <Route path='/Prueba' element={<Prueba />}/>
 
     </Routes>
     </BrowserRouter>
