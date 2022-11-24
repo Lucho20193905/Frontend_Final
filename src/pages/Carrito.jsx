@@ -58,6 +58,9 @@ const Carrito = () => {
         <Modal.Title > Carrito de Compra </Modal.Title>
     </Modal.Header>
     </div>
+    <div>
+      
+    </div>
     </>
   );
 
