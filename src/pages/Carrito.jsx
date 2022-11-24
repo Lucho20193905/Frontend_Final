@@ -59,10 +59,10 @@ const Carrito = () => {
     </Modal.Header>
     </div>
     <div>
-
+      
     </div>
     </>
   );
-    
+
 };
 export default Carrito;
