@@ -16,7 +16,7 @@ const Carrito = () => {
   return (
       <>
       <div >
-      <Navbar bg="light" expand="lg" style={{height: '45px'}}>
+      <Navbar bg="light" expand="lg" style={{height: '50px'}}>
       <Container fluid >
         <Navbar.Brand href="#" ><Image
           src="https://thumbs.dreamstime.com/b/gamepad-icon-controller-isolated-white-background-149257730.jpg"
@@ -59,10 +59,9 @@ const Carrito = () => {
     </Modal.Header>
     </div>
     <div>
-
+      
     </div>
     </>
   );
-    
 };
 export default Carrito;
