@@ -4,12 +4,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Requets from './pages/Requets';
-import Gamming from './pages/Gamming';
-import Busqueda from './pages/Busqueda';
-import Ofimatica from './pages/Ofimatica';
-import Programing from './pages/Programing';
-import Ranking from './pages/Ranking';
+import Requets from './pages/Alonso/Requets';
+import Gamming from './pages/Alonso/Gamming';
+import Busqueda from './pages/Alonso/Busqueda';
+import Ofimatica from './pages/Alonso/Ofimatica';
+import Programing from './pages/Alonso/Programing';
+import Ranking from './pages/Alonso/Ranking';
 import Mk_2 from './pages/Mk_2';
 import Mk_4_5 from './pages/Mk_4_5';
 import Mk_12 from './pages/Mk_12';
@@ -22,7 +22,7 @@ import Main from './pages/Main'
 import Carrito from './pages/Carrito'
 import Building from './pages/Building'
 import Mockup21 from './pages/Mockup21';
-import Prueba from './pages/Prueba';
+import Prueba from './pages/Alonso/Prueba';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -40,7 +40,7 @@ root.render(
       <Route path='/Registro' element={<RegistroPage />}/>
       <Route path='/Principal' element={<Principal />}/>
       <Route path='/ListaResena' element={<ListaResena />}/>
-      <Route path='/HistorialdeOrden' element={<HistorialOrden />}/>
+      <Route path='/HistorialOrden' element={<HistorialOrden />}/>
       <Route path='/Surprise' element={<Surprise />}/>
       <Route path='/Main' element={<Main />}/>
       <Route path='/Carrito' element={<Carrito />}/>
