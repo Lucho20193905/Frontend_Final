@@ -3,7 +3,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import {} from "react-router-dom";
-import "./styles/Mockup21.css";
+
 
 const Mockup21 = () => {
   return (

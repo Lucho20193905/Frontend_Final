@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-no-target-blank */
-import './styles/Mk_4_5.css'
+
 import {  } from "react-router-dom"
 const Mk_4_5 = () => {
   return <div>

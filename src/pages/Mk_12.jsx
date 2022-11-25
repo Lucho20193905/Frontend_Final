@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/jsx-no-target-blank */
-import './styles/Mk_12.css'
+
 import {  } from "react-router-dom"
 const Mk_12 = () => {
     return <div>
