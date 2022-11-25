@@ -8,7 +8,7 @@ const GridProductosComprados = (props) => {
         props.producto.map((producto) => {
             return <Row className="mb-2">
                 <Col>
-                    <Card onClick={() => props.onCursoSelected(producto.id)  }>
+                    <Card onClick={() => props.onProductoSelected(producto.id)  }>
                         <Card.Body>{ producto.nombre }</Card.Body>
                     </Card>
                 </Col>
