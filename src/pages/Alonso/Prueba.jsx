@@ -5,6 +5,7 @@ import React from "react"
 import Layout from "../../Components/Layout";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
+
 const Prueba = (props) => {
   return <Layout
     makeHeader={() => <Header titulo="Listado de Cursos" />}

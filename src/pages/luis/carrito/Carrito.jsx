@@ -1,16 +1,26 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
-import {  } from "react-router-dom";
-import "./styles/Surprise.css";
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Image from "react-bootstrap/Image";
-import { Modal } from "react-bootstrap";
+import React, { useEffect, useState } from "react"
+//import { useNavigate } from "react-router"
+import Footer from "../../../Components/Footer"
+import Header from "../../../Components/Header"
+import Layout from "../../../Components/Layout"
+import GridProductosComprados from "./body/listacompra"
+
+const Carrito = () =>{
+  const [listadoProducto, setListadoProducto] = useState([])
+
+  //const navigate = useNavigate() //hook de navegacion
+
+  const httpObtenerProducto = async () => {
+    const resp = await fetch("http://localhost:4447/orden")
+    const data = await resp.json()
+    console.log(data)
+    setListadoProducto(data)
+  }
+  useEffect(() => {
+    httpObtenerProducto()
+  },[])
 
   return <Layout
         makeHeader={ () => <Header titulo="Carrito de compra" /> }
@@ -25,7 +35,3 @@ import { Modal } from "react-bootstrap";
 }
 
 export default Carrito
-
-
-
-
