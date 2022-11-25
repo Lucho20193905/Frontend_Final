@@ -5,6 +5,7 @@ const Layout = (props) => {
     return <Container>
         { props.makeHeader() }
         { props.makeBody() }
+        { props.makeFooter() }
     </Container>
 }
 

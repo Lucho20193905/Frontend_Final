@@ -1,25 +1,25 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react"
-import { useNavigate } from "react-router"
+//import { useNavigate } from "react-router"
+import Footer from "../../../components/Footer"
 import Header from "../../../components/Header"
-import { RUTA_BACKEND } from "../../../conf"
 import Layout from "../../../components/Layout"
 import GridProductosComprados from "./body/listacompra"
 
 const Carrito = () =>{
-  const [listadoOrdenProducto, setListadoOrdenProducto] = useState([])
+  const [listadoProducto, setListadoProducto] = useState([])
 
-  const navigate = useNavigate() //hook de navegacion
+  //const navigate = useNavigate() //hook de navegacion
 
-  const httpObtenerOrdenProducto = async () => {
-    const resp = await fetch(`${RUTA_BACKEND}/orden`)
+  const httpObtenerProducto = async () => {
+    const resp = await fetch("http://localhost:4447/orden")
     const data = await resp.json()
     console.log(data)
-    setListadoOrdenProducto(data)
+    setListadoProducto(data)
   }
   useEffect(() => {
-    httpObtenerOrdenProducto()
+    httpObtenerProducto()
   },[])
 
   return <Layout
@@ -27,11 +27,10 @@ const Carrito = () =>{
         makeBody={ 
             () =>  <div>
                 <GridProductosComprados
-                    carreras={ listadoOrdenProducto }
-                    />
+                    producto={ listadoProducto }/>
             </div>
         }
-        
+        makeFooter={() => <Footer></Footer>}
     />
 }
 
