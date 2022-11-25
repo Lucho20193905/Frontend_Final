@@ -12,7 +12,7 @@ const Header = (props) => {
   return (
     <>
       <div>
-        <Navbar bg="light" expand="lg" style={{ height: '45px' }}><Container fluid >
+        <Navbar bg="light" expand="lg" style={{ height: '45px', width:'100%',marginLeft:'0px'}}><Container fluid >
           <Navbar.Brand href="#" ><Image src="img/home.png" rounded style={{ maxHeight: '35px' }} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">

@@ -1,5 +1,5 @@
 body{
-    background-color: blueviolet;  
+    background-color: #fbfbfb;
   }
 
 #gamepad {
@@ -40,7 +40,7 @@ body{
   .boton{
     height: 50px;
     margin: 4px;
-    background-color: blueviolet;
+    background-color: #fbfbfb;
     border: none;
     font-size: medium;
     position: relative;

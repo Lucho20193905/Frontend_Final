@@ -6,16 +6,16 @@ import Layout from "../../Components/Layout";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 
-const Prueba = (props) => {
+const Prueba = () => {
   return <Layout
-    makeHeader={() => <Header titulo="Listado de Cursos" />}
+    makeHeader={() => <Header titulo="Equipos Disponibles" />}
     makeBody={
       () => <div>
         <h2>No quieres ver la luza del sol verdad?</h2>
         <div class="container text-center">
-          <div class="row">
+          <div class="row" style={{marginLeft:'10px'}}>
             <div class="col">
-              <div class="card" style={{ width: '18rem' }}>
+              <div class="card" style={{ width: '18rem'}}>
                 <img src="./img/x270.png" class="card-img-top" alt="x270"></img>
                 <div class="card-body">
                   <h5 class="card-title">Lenovo Thinkpad X270</h5>

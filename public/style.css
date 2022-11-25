@@ -1,9 +1,5 @@
 body{
-  background-color: blueviolet;  
-}
-
-#nav1{
-  fixed: top;
+  background-color: #fbfbfb;
 }
 
 #gamepad {
@@ -52,7 +48,7 @@ body{
 .boton{
   height: 50px;
   margin-top: none;
-  background-color: blueviolet;
+  background-color: #fbfbfb;
   border: none;
   font-size: medium;
   position: relative;

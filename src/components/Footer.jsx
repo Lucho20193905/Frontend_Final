@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     return <div>
-        Hernan Quintana (2022)
+        Grupo 2 Viva Linux (2022)
     </div>
 }
 
