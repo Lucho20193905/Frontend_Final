@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import {  } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Image from "react-bootstrap/Image";
 import { Modal } from "react-bootstrap";
 
-const Header = () => {
+const Header = (props) => {
 return (
     <>
     <div >
@@ -51,7 +51,7 @@ return (
     </div>
     <div>
     <Modal.Header >
-        <Modal.Title > Carrito de Compra </Modal.Title>
+        <Modal.Title > <h1>{props.titulo}</h1></Modal.Title>
     </Modal.Header>
     </div>
     </>
