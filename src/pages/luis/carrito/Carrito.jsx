@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react"
 import { useNavigate } from "react-router"
 import Header from "../../../components/Header"
 import { RUTA_BACKEND } from "../../../conf"
+import Layout from "../../../components/Layout"
+import GridProductosComprados from "./body/listacompra"
 
 const Carrito = () =>{
   const [listadoOrdenProducto, setListadoOrdenProducto] = useState([])
@@ -20,10 +22,17 @@ const Carrito = () =>{
     httpObtenerOrdenProducto()
   },[])
 
-  return <layout>
-    makeHeader = {() => <Header>
-      </Header>}
-  </layout>
+  return <Layout
+        makeHeader={ () => <Header titulo="Carrito de compra" /> }
+        makeBody={ 
+            () =>  <div>
+                <GridProductosComprados
+                    carreras={ listadoOrdenProducto }
+                    />
+            </div>
+        }
+        
+    />
 }
 
 export default Carrito
