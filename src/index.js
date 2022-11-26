@@ -34,6 +34,7 @@ root.render(
       <Route path='/Programing' element={<Programing />}/>
       <Route path='/Requets' element={<Requets />}/>
       <Route path='/Ranking' element={<Ranking />}/>
+      <Route path='/Busqueda' element={<Busqueda />}/>
       <Route path='/Login' element={<Mk_2 />}/>
       <Route path='/formularioOne' element={<Mk_4_5 />}/>
       <Route path='/Componentes' element={<Mk_12 />}/>

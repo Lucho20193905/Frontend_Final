@@ -1,19 +1,37 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { } from "react-router-dom"
-import React from "react"
+import { useNavigate } from "react-router-dom"
+import React, { useState } from "react"
 import Layout from "../../Components/Layout";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
+import { useEffect } from "react";
 
 const Prueba = () => {
+
+  const [listaProducto, setListaProducto] = useState([])
+  const [listaPcArmado, setListaPcArmado] = useState([])
+  const navigate = useNavigate()
+
+  const httpObtenerProducto = async() =>{
+    const resp = await fetch("http://localhost:4444/productos")
+    const data = await resp.json()
+
+    console.log(data)
+    setListaProducto(data)
+  }
+
+  useEffect(()=>{
+    httpObtenerProducto()
+  },[])
+
   return <Layout
     makeHeader={() => <Header titulo="Equipos Disponibles" />}
     makeBody={
       () => <div>
         <h2>No quieres ver la luza del sol verdad?</h2>
         <div class="container text-center">
-          <div class="row" style={{marginLeft:'10px'}}>
+          <div class="row" style={{marginLeft:'5px'}}>
             <div class="col">
               <div class="card" style={{ width: '18rem'}}>
                 <img src="./img/x270.png" class="card-img-top" alt="x270"></img>
@@ -60,7 +78,7 @@ const Prueba = () => {
                 <img src="./img/dellVostro.png" class="card-img-top" alt="dellVostro"></img>
                 <div class="card-body">
                   <h5 class="card-title">Dell Vostro 14 3000</h5>
-                  <p class="card-text">.</p>
+                  <p class="card-text">[Descripcion increible de un producto tenologico]</p>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">Screen Size 14 Inches</li>
                     <li class="list-group-item">Resolution 1366x768 Display</li>

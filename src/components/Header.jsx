@@ -34,8 +34,15 @@ const Header = (props) => {
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
+
             <Form className="d-flex">
-              <Button variant="outline-success">Search</Button>
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-success">Search</Button>
             </Form>
             <Image
               src="iconos/carrito-de-compras.png"
