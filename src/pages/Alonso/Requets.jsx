@@ -19,7 +19,7 @@ const Requets = () => {
               <div className="card-body">
                 <h5 className="card-title">Ofimatica</h5>
                 <p className="card-text">Microsoft office a 60 fps?.</p>
-                <a href="ofimatica.html" className="btn btn-primary">Dale Candela</a>
+                <a href="/Ofimatica" className="btn btn-primary">Dale Candela</a>
               </div>
             </div>
           </div>
@@ -29,7 +29,7 @@ const Requets = () => {
               <div className="card-body">
                 <h5 className="card-title">Programacion</h5>
                 <p className="card-text">¿Html no es suficente para ti y deseas programar como hombre?.</p>
-                <a href="programing.html" className="btn btn-primary">¿Que esperas?</a>
+                <a href="/Programing" className="btn btn-primary">¿Que esperas?</a>
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@ const Requets = () => {
               <div className="card-body">
                 <h5 className="card-title">VideoJuegos</h5>
                 <p className="card-text">Para correr los juegos de ultima generacion en alto rendimiento.</p>
-                <a href="gamming.html" className="btn btn-primary">Let's dance baby</a>
+                <a href="/Gamming" className="btn btn-primary">Let's dance baby</a>
               </div>
             </div>
           </div>

@@ -23,6 +23,8 @@ import Carrito from './pages/luis/carrito/Carrito'
 import Building from './pages/luis/building/Building'
 import Mockup21 from './pages/Mockup21';
 import Prueba from './pages/Alonso/Prueba';
+import Product from './pages/Alonso/Product';
+import Shop from './pages/Alonso/Shop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -48,6 +50,8 @@ root.render(
       <Route path='/Building' element={<Building />}/>
       <Route path='/Resena' element={<Mockup21 />}/>
       <Route path='/Prueba' element={<Prueba />}/>
+      <Route path='/Product' element={<Product />}/>
+      <Route path='/Shop' element={<Shop />}/>
 
     </Routes>
     </BrowserRouter>

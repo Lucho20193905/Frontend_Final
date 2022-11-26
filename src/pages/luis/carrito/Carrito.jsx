@@ -21,7 +21,7 @@ const Carrito = () =>{
   useEffect(() => {
     httpObtenerProducto()
   },[])
-
+  
   return <Layout
         makeHeader={ () => <Header titulo="Carrito de compra" /> }
         makeBody={ 
