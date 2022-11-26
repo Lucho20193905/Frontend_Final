@@ -2,9 +2,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react"
 //import { useNavigate } from "react-router"
-import Footer from "../../../Components1/Footer"
-import Header from "../../../Components1/Header"
-import Layout from "../../../Components1/Layout"
+import Footer from "../../../Components/Footer"
+import Header from "../../../Components/Header"
+import Layout from "../../../Components/Layout"
 import GridProductosComprados from "./body/listacompra"
 
 const Carrito = () =>{

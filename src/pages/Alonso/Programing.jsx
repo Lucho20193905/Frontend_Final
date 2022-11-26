@@ -2,9 +2,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { } from "react-router-dom"
 import React from "react"
-import Header from "../../Components1/Header"
-import Layout from "../../Components1/Layout"
-import Footer from "../../Components1/Footer"
+import Header from "../../Components/Header"
+import Layout from "../../Components/Layout"
+import Footer from "../../Components/Footer"
 
 const Programing = () => {
   return <Layout
