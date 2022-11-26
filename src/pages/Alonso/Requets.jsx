@@ -2,15 +2,15 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import { } from "react-router-dom"
 import React from "react"
-import Layout from "../../Components/Layout"
-import Header from "../../Components/Header"
-import Footer from "../../Components/Footer"
+import Layout from "../../Components1/Layout"
+import Header from "../../Components1/Header"
+import Footer from "../../Components1/Footer"
 const Requets = () => {
   return <Layout
     makeHeader={ () => <Header titulo="¿Que uso le dara al equipo?" />}
     makeBody={
     () => <div>
-      
+
       <div className="container text-center">
         <div className="row">
           <div className="col" style={{marginLeft:'10px'}}>
