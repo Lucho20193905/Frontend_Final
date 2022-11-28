@@ -51,7 +51,7 @@ const Prueba = () => {
 
   const onTipoSelected = (tipoId) => {
     console.log("Se selecciono " + tipoId)
-    httpObtenerPcArmado()
+    httpObtenerPcArmado(tipoId)
   }
 
   const onDescSelected = (pcDesc) => {
