@@ -4,7 +4,6 @@ import { Card } from 'react-bootstrap';
 import Col from 'react-bootstrap/Col';
 import { data } from './data';
 
-
 const Product = (props) => (
 
   <Col xs={12} md={6} lg={4} key={props.id}>
@@ -12,7 +11,7 @@ const Product = (props) => (
       <Card.Header>{props.nombre}</Card.Header>
       <Card.Img variant="top" src={props.image} />
       <Card.Body>
-        <Card.Title>{data.title}</Card.Title>
+        <Card.Title>{props.tipo}</Card.Title>
         <Card.Text>
           {props.descripcion}
         </Card.Text>

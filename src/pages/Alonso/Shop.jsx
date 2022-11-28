@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Row from 'react-bootstrap/Row';
 import { data } from './data';
 import Product from './Product';

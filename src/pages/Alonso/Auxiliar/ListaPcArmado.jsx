@@ -9,8 +9,7 @@ const ListaPcArmado = (props) => {
       <Row>
         {props.pcarmado.map(pcarmado => (
           <Product key={pcarmado.id} {...pcarmado}
-          nombre={pcarmado.nombre}
-          descripcion={pcarmado.descripcion}/>
+          nombre={pcarmado.nombre}/>
         ))}
       </Row>
     </div>

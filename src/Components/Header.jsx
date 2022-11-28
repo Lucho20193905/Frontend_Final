@@ -36,11 +36,11 @@ const Header = (props) => {
             <Form className="d-flex">
               <Form.Control
                 type="search"
-                placeholder="Search"
+                placeholder="Dale escribe algo pa'"
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="outline-success" onClick={"https://www.google.com/search?q=t480"}>Search</Button>
             </Form>
             <Image
               src="iconos/carrito-de-compras.png"
