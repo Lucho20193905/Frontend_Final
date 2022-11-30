@@ -25,6 +25,7 @@ import Mockup21 from './pages/Mockup21';
 import Prueba from './pages/Alonso/Prueba';
 import Product from './pages/Alonso/Product';
 import Shop from './pages/Alonso/Shop';
+import RankTest from './pages/Alonso/RankTest';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -52,6 +53,7 @@ root.render(
       <Route path='/Prueba' element={<Prueba />}/>
       <Route path='/Product' element={<Product />}/>
       <Route path='/Shop' element={<Shop />}/>
+      <Route path='/RankTest' element={<RankTest />}/>
 
     </Routes>
     </BrowserRouter>
