@@ -1,24 +1,25 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useNavigate } from "react-router-dom"
+//import { useNavigate } from "react-router-dom"
 import React, { useState } from "react"
 import Layout from "../../Components/Layout";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import { useEffect } from "react";
-import { useParams } from "react-router";
+//import { useParams } from "react-router";
 import ListaPcArmado from "./Auxiliar/ListaPcArmado";
 import ListaTipoPc from "./Auxiliar/ListaTipoPc";
 import ListaDescPc from "./Auxiliar/ListaDescPc";
+import Carrito from "./Auxiliar/Carrito";
 
 const Prueba = () => {
 
   const [listaDescPc, setListaDescPc] = useState([])
   const [listaPcArmado, setListaPcArmado] = useState([])
   const [listaTipoPc, setListaTipoPc] = useState([])
-  const navigate = useNavigate()
+  //const navigate = useNavigate()
 
-  const { tipoId, descripcionId } = useParams()
+  //const { tipoId, descripcionId } = useParams()
 
   const httpObtenerPcArmado = async (descripcionId = "-1",tipoId = "-1") => {
     const ruta = descripcionId === "-1" && tipoId === "-1"?
@@ -63,6 +64,7 @@ const Prueba = () => {
     makeHeader={() => <Header titulo="Equipos Disponibles" />}
     makeBody={
       () => <div>
+        <Carrito/>
         <ListaTipoPc tipo={listaTipoPc}
           onTipoSelected={onTipoSelected}/>
         <ListaDescPc descripcion={listaDescPc}

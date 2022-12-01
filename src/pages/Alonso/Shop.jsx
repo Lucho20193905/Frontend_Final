@@ -1,14 +1,13 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
-import { data } from './data';
 import Product from './Product';
 
-const Shop = () => {
+const Shop = (props) => {
 
   return (
     <div className='row-wrapper'>
       <Row>
-        {data.map(product => (
+        {props.map(product => (
           <Product key={product.id} {...product} />
         ))}
       </Row>
